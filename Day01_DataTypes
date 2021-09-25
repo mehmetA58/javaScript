@@ -1,0 +1,48 @@
+/*
+
+Primitive Data Type in JS
+string,number,boolean,null,undefined
+*/
+var myName='Javascript'
+console.log(typeof(myName));//"string"
+
+var myName="Java"
+console.log(typeof(myName));//"string"
+
+/*
+Number literal:
+we only have number data type.No int,double,byte,...
+
+Sayı değişmezi:
+sadece number veri tipimiz var. int,double,byte,...*/
+
+var myNum=20;
+console.log(typeof(myNum));//"number"
+var myNum=20.9;
+console.log(typeof(myNum));//"number"
+
+var myNum=20/0;//->atama değeri yok
+console.log(myNum);//Infinity->Sonsuzluk.Infinity anahtar kelimesinin veri türü number'dır.
+console.log(typeof(myNum));//"number"
+
+var num1=20+'a'+15;
+console.log(typeof(num1));//"string"
+console.log(num1);//"20a15"
+
+var num2='a'+20+15;
+console.log(typeof(num2));//"string"
+console.log(num2);//"a2015"
+
+
+/*
+boolean
+True or False
+*/
+var isExist=true;
+console.log(isExist);//true
+console.log(typeof(isExist));//"boolean"
+
+var isExist=false;
+console.log(isExist);//false
+console.log(typeof(isExist));//"boolean"
+
