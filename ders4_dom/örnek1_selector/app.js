@@ -26,15 +26,15 @@ document.querySelector("#govde").style.backgroundImage =
 //(onmouseover,)
 const h1 = document.querySelector(".h1");
 
-h.onmouseover = function(e) {
+h1.onmouseover = function() {
     h.style.color = "red";
     h.style.backgroundColor = "white";
 };
-h.onmuseout = function() {
+h1.onmuseout = function() {
     h.style.color = "pink";
     h.style.backgroundColor = "yellow";
 };
 document.querySelector(".bir").onclick = function() {
-    document.querySelector(".bir").src = "img/logo2.png";
-    document.querySelector(".iki").src = "img/js_logo.png";
+    document.querySelector(".bir").src = "./img/logo2.png";
+    document.querySelector(".iki").src = "./img/js_logo.png";
 };
