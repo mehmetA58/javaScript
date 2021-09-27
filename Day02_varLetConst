@@ -1,0 +1,29 @@
+var age=10;
+console.log(age);
+
+age=11;
+console.log(age);
+
+let age=10;//1.Let sadece orijinal olarak tanımlanan blok içinde tanımlanır. const'a benzer
+console.log(age);
+//1.Let sadece orijinal olarak tanımlanan blok içinde tanımlanır. const'a benzer
+//2. let anahtar sözcüğünü kullanarak aynı let değişkenlerinin adını yeniden bildiremeyiz
+//3. Hata almamak için kullandıktan sonra let değişkeni tanımlayamayız. const ile benzer
+age=11;
+console.log(age);
+
+age="java";
+console.log(age);
+
+//Const
+//Değer değişmezse const kullanın.
+
+const isim="Tech Pro";
+console.log(isim);//"Tech Pro"
+console.log(typeof isim);//"string"
+
+const age=10;//10
+console.log(age);
+
+age=11;//error
+console.log(age);
