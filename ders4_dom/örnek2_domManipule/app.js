@@ -27,3 +27,33 @@ document.querySelector(".ekle").onclick = function() {
 document.querySelector(".sil").onclick = function() {
     liste.removeChild(liste.lastChild);
 };
+const parag = document.querySelector(".forH1");
+parag.innerHTML = `<h1>${"Programlama Dilleri"}</h1>`;
+
+document.querySelector(".textbox").onkeyup = function() {
+    const checkbox = document.querySelector(".checkbox");
+    const textbox = document.querySelector(".textbox");
+
+    if (checkbox.checked) {
+        textbox.value = textbox.value.toUpperCase();
+    } else {
+        textbox.value = textbox.value.toLowerCase();
+    }
+};
+
+resim.onmouseover = function() {
+    resim.src = "./img/aslan2.jpeg";
+};
+
+resim.onmouseout = function() {
+    resim.src = "./img/aslan1.jpeg";
+};
+
+document.querySelector(".dil").onkeydown = function(olay) {
+    if (olay.keyCode == 13) {
+        document.querySelector(".ekle").onclick();
+    }
+    if (olay.keyCode == 46) {
+        document.querySelector(".sil").onclick();
+    }
+};
