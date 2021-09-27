@@ -27,3 +27,24 @@ console.log(age);
 
 age=11;//error
 console.log(age);
+
+//aritmetic sings
+console.clear();
+//var x = 5;
+//var y = 10;
+//var z= x + y;
+//alert(z);
+
+
+let x=12;
+let y=3;
+console.log(x++);//12
+console.log(x);//13
+console.log(++x);//14
+console.log(x);//14
+
+
+console.log(y--);//3
+console.log(y);//2
+console.log(--y);//1
+console.log(y);//1
