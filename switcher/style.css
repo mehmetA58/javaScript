@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    float: right;
+    font: size 30px;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.lightmode {
+    background-color: white;
+    color: black;
+}
