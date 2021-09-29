@@ -1,0 +1,68 @@
+const bread=2;
+const eggs=30;
+const cheese=40;
+const total=bread+eggs+cheese;
+console.log("Spending : "+total + " USD");
+
+//diziler
+
+//dizi oluşturma
+//1.yol
+const arabalar=["Mercedes","TOFAŞ","Anadol","Ferrari","MİNİCOOPER"];
+console.log(arabalar);//["Mercedes", "TOFAŞ", "Anadol", "Ferrari", "MİNİCOOPER"]
+
+//2.yol
+const arabalar1=new Array("Mercedes","TOFAŞ","Anadol","Ferrari","MİNİCOOPER");
+console.log(arabalar1);//["Mercedes", "TOFAŞ", "Anadol", "Ferrari", "MİNİCOOPER"]
+
+//dizide verilere ulaşma
+
+console.log(arabalar[1]);//"TOFAŞ"
+console.log(arabalar[arabalar.length-2]);//"Ferrari"
+
+//dizilere veri eklemek
+
+arabalar1[0]="KARtAL";
+arabalar[1]="VOLVO";
+console.log("VOLVO eklemeden sonra :"+arabalar);//Mercedes,VOLVO,Anadol,Ferrari,MİNİCOOPER
+console.log("KARtAL eklemeden sonra :"+arabalar1);//KARtAL,TOFAŞ,Anadol,Ferrari,MİNİCOOPER"
+
+//dizilere veri eklemek
+
+arabalar1[0]="KARtAL";
+arabalar[1]="VOLVO";
+console.log("VOLVO eklemeden sonra :"+arabalar);//Mercedes,VOLVO,Anadol,Ferrari,MİNİCOOPER
+console.log("KARtAL eklemeden sonra :"+arabalar1);//KARtAL,TOFAŞ,Anadol,Ferrari,MİNİCOOPER"
+
+//diziye başka bir dizi eklemek
+arabalar[1]=["Fiat","Audi","Citroen"];//"ReferenceError: arabalar1 is not defined
+arabalar=["Fiat","Audi","Citroen"];//"SyntaxError: Unexpected identifier
+arabalar[1]="["Fiat","Audi","Citroen"]";//"SyntaxError: Unexpected identifier
+
+
+const arabalar1=new Array("Mercedes","TOFAŞ","Anadol","Ferrari","MİNİCOOPER");
+//const öğrenciBilgileri=["Mehmet","Akbayır","2021-2022",];
+//console.log(öğrenciBilgileri);//["Mehmet", "Akbayır", "2021-2022"]
+
+const öğrenciBilgileri=["Mehmet","Akbayır","2021-2022",arabalar1];
+console.log(öğrenciBilgileri);
+
+
+console.log(öğrenciBilgileri[3]);//["Mercedes", "TOFAŞ", "Anadol", "Ferrari", "MİNİCOOPER"]
+
+console.log(öğrenciBilgileri.shift());//console.log(öğrenciBilgileri.shift());
+
+console.log(öğrenciBilgileri.pop());
+console.log(öğrenciBilgileri.push("MiniCooper","QA"));//5
+console.log(öğrenciBilgileri.reverse());//["QA", "MiniCooper", "2021-2022", "Akbayır", "Mehmet"]
+
+console.log(öğrenciBilgileri.shift());//"QA"
+
+
+to be continued...
+
+
+
+
+
+
