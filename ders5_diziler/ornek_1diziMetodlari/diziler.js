@@ -60,3 +60,22 @@ console.log(sayilar.indexOf(2)); //3
 console.log(sayilar.lastIndexOf(5)); //7
 console.log(sayilar.indexOf(2, 4)); //8
 console.log(sayilar.indexOf(5, 3)); //7
+
+//join()
+// join default olarak virgullerle ayirarak diziden kurtarir
+//! ama istersek ""," ","-","*" gibi farkli isaretlerle de ayirabiliriz//
+
+console.log(sayilar.join("-"));
+
+//toString() join gibidir.
+
+console.log(sayilar.toString());
+
+//****** */
+const arabalar = ["bmw", "mercedes", "Volvo", "sahin", "anadol"];
+//slice
+console.log(arabalar.slice(2)); //['Volvo', 'sahin', 'anadol']
+console.log(arabalar.slice(1, 3)); //['mercedes', 'Volvo']
+
+const birlesik = sayilar.concat(arabalar);
+console.log(birlesik);
