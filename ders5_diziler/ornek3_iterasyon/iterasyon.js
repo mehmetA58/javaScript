@@ -59,3 +59,39 @@ const buyuk = isimler.map((isim) => isim.toUpperCase());
 console.log(buyuk);
 
 document.querySelector(".baslık").textContent = buyuk.join("->");
+
+//**********FİLTER METODU*********************** */
+//ornek
+//fiyatlar dizisindeki 250 den büyük fiyatları yazdır.
+
+const fiyatlar = [120, 260, 300, 322.5, 400, 768];
+
+console.log(fiyatlar.filter((t) => t > 250)); //250'den buyuk olanlar
+//-------------- ÖRNEK -------------------
+// maası 4000 $’dan düsük olanlara %50 zam yapmak istiyoruz
+// ve bunu ayri dizi olarak saklamak istiyoruz.
+const maaslar = [3000, 5000, 4000, 6000, 6500];
+
+console.log(maaslar.filter((a) => a < 4000).map((t) => t * 1.5));
+
+//-------------- ÖRNEK -------------------
+const adlar = [
+    "Samet",
+    "Hakkı",
+    "Duygu",
+    "Emrullah",
+    "Bilal",
+    "Ali",
+    "Ahmet",
+    "Hasan",
+    "Defne",
+    "Serdar",
+];
+//ilk harfi A olanlar
+adlar.filter((x) => x.startsWith("A")).forEach((x) => console.log(x));
+
+//*********REDUCE METODU */
+//!reduce çıkış metodudur,reduceden sonra foreach çalışmaz
+const maaslarım = [3000, 5000, 4000, 2000, 1000];
+
+console.log(maaslarım.reduce((x, y) => x + y, 0));
