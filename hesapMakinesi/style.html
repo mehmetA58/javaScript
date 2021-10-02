@@ -19,7 +19,7 @@
             <!-- placeholder = Ekran yenilendiginde ekranda hiclik olsun -->
             <div id="tuslarArka">
                 <div class="satir">
-                    <button class="btn light">C</button>
+                    <button class="btn light bos">C</button>
                     <span><strong>Mehmet AKBAYIR</strong></span>
                 </div>
                 <div class="satir">
@@ -44,7 +44,7 @@
                     <input type="button" class="btn dark" name="b0" value="0" onClick="hesapEt(b0.value)" />
                     <input type="button" class="btn dark" name="dot" value="." onClick="hesapEt(dot.value)" />
                     <input type="button" class="btn dark" name="div" value="/" onClick="hesapEt(div.value)" />
-                    <input type="button" class="btn yellow" name="equal" value="=" onClick="hesapEt(equal.value)" />
+                    <input type="button" class="btn yellow" name="equal" value="=" onClick="displayResult.value=eval(displayResult.value)" />
                 </div>
             </div>
         </form>
